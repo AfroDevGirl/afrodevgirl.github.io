@@ -1,0 +1,131 @@
+body{
+	background-color: #0064B2;
+	font-family: 'Oswald', sans-serif;
+}
+header{
+  	height: 150px;
+  	width: 100%;
+  	background-color: #008EFF;
+  	position: relative;
+  	border: 2px solid black;
+  	margin-bottom: 5em;
+  	border-radius: 4px;
+}
+#content{
+	width: 100%;
+  	height: 800px;
+  	background-color: #FFA214;
+  	margin: auto;
+  	margin-top: 5em;
+  	border: 2px solid black;
+  	border-radius: 4px;
+}
+footer{
+	height: 150px;
+  	width: 100%;
+  	background-color: #008EFF;
+  	position: relative;
+  	margin-top: 5em;
+  	border: 2px solid black;
+  	border-radius: 4px;
+}
+a:link{
+	text-align: right;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	color: white;
+}
+a:visited{
+	color: red;
+}
+h3{
+	text-align: center;
+	font-weight: bolder;
+}
+h4{
+	text-align: center;
+	font-weight: bold;
+}
+h5{
+	text-align: center;
+	font-weight: lighter;
+}
+#nav1{}
+img{
+	width: 100px;
+	height: 100px;
+	margin: 10px; 
+}
+#post{
+	width: 1000px;
+	height: 720px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: auto;
+	text-align: center;
+	background-color: #FFE8C6;
+	position: relative;
+}
+#about{
+	width: 530px;
+	height: 480px;
+	margin: 10px;
+	float: left;
+	background-color: #FFE8C6;
+}
+#project{
+	width: 530px;
+	height: 480px;
+	margin: 10px;
+	float: right;
+	background-color: #FFE8C6;
+	display: inline-block;
+}
+#technical{
+	width: 550px;
+	height: 470px;
+	margin: 15px;
+	float: left;
+	background-color: #FFE8C6;
+	text-align: inherit;
+}
+#cultural{
+	width: 550px;
+	height: 470px;
+	float: right;
+	margin: 15px;
+	background-color: #FFE8C6;
+	text-align: inherit;
+}
+.center{
+	text-align: center;
+	width: inherit;
+}
+p{
+	text-align: center;
+	width: inherit;
+}
+.nav{
+	height: 30px;
+	width: 100px;
+	border: 1px solid black;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	float:right;
+	position: relative;
+	margin-top: 120px;
+}
+.footnav{
+	height: 30px;
+	width: 100px;
+	border: 1px solid black;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	float:right;
+	position: relative;
+	margin-bottom: 120px;
+}
