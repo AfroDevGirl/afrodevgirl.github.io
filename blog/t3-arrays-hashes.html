@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alexis Moody Portfolio</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../default.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		 <!-- Header section -->
+		<header>
+			<img src=""/> 
+			<div class="nav">Contact</div>
+			<div class="nav">About</div>
+			<div class="nav">Projects</div>
+			<div class="nav"><a href="http://amoody2108.github.io/blog_index.html">Blog</a></div>
+		</header>
+		<!-- Content Section -->
+		<div id="content">
+			<div id="post">
+				<h3>Arrays and Hashes</h3>
+				<h4>No, not that kind of hash</h4>
+				<h5>06/29/2015</h5>
+				<p>Well hello again! We’re back talking about the wonderful land of Ruby and some of it’s most important data structures, Arrays and Hashes. First of all what is a data structure? Well it’s simply a way for a program to store data. A simple variable is a data structure along with our dear friends arrays and hashes. So what do we do with all of this data? Well we tell the computer to do things with it! Variables, arrays, and hashes allow us to access, change, and output data from the wild world of binary.</p>
+				<p>So what’s the difference between our two main friends arrays and hashes? Let’s start with arrays. An array can be made in a couple of different ways but we’ll be working with standard notation for the time being.</p> 
+				<img src="../standard-array.png"/> 
+				<p>As you can see this array looks very similar to any other variable except for those brackets. The brackets allow you to store data, separated by commas, into the one array. This data can be anything. Integers, strings, booleans (true or false), and even more arrays! The literal notation is pretty similar but there is a lot more typing.</p>
+				<img src="../literal-array.png"/> 
+				<p>With the literal notation you must define an empty array then load each value individually by using the array index. Indexes start at the number zero so to access the value of “Ruby” in our languages array we would have to say <strong>languages[2]</strong> even though it is the third value in our array. Literal notation is great for when you don’t know the data going into the array at the time of programming.</p>
+				<p>Now on to our more unique colleague hashes! A hash is, at it’s core, exactly like an array. It stores multiple values into one neat little place. The major difference is that hashes define their own key-values.</p> 
+				<img src="../standard-hash.png"/>
+				<p>There is a lot more to this than your basic array. Instead of automatic numerical indexes found in arrays we create our own indexes, generally a “string”, with a corresponding value. In the example above we see all of our superheroes as our key-values with their secret identity as the actual value stored in the key. To access that information we could say <strong>superheroes[“Black_Widow”]</strong> to get the value of “Natasha Romanoff”. A couple of things to note. Each standard hash must have a comma after each line except for the last value and it must use curly brackets or your code will not work. Of course there is another way of creating hashes and that is with the literal notation.</p> 
+				<img src="../literal-hash.png"/> 
+				<p>The literal notation array and literal notation hash are very similar except that you define the key-value in the brackets as well as what the key-value is going to store.</p>
+				<p>That’s about all for this week. We’ll be on break for the 4th of July holiday so see you in a couple of weeks!</p>
+			</div>
+		</div>
+		<!-- Footer Section -->
+		<footer>
+			<div class="footnav"><a href="https://www.twitter.com/QP_VPMedia">Twitter</a></div>
+			<div class="footnav"><a href="https://www.facebook.com/DarkLight12">Facebook</a></div>
+			<div class="footnav"><a href="https://www.linkedin.com/in/amoody12">Linked-In</a></div>
+			<div class="footnav"><a href="mailto:amoodyldes@gmail.com">Email</a></div>
+		</footer>
+	</body>
+</html>

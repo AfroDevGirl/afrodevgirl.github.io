@@ -1,38 +1,36 @@
 body{
-	background-color: #0064B2;
+	background-color: black;
 	font-family: 'Oswald', sans-serif;
 }
 header{
   	height: 150px;
   	width: 100%;
-  	background-color: #008EFF;
+  	background-color: #4B00BF;
   	position: relative;
   	border: 2px solid black;
   	margin-bottom: 5em;
   	border-radius: 4px;
 }
-#content{
+/*#content{
 	width: 100%;
-	height: 1000px;
   	background-color: #FFA214;
   	margin: auto;
   	margin-top: 5em;
   	border: 2px solid black;
   	border-radius: 4px;
-}
+}*/
 footer{
 	height: 150px;
   	width: 100%;
-  	background-color: #008EFF;
+  	background-color: #4B00BF;
   	position: relative;
   	margin-top: 5em;
-  	border: 2px solid black;
-  	border-radius: 4px;
   	clear: both;
 }
 a:link{
 	text-align: right;
 	text-decoration: none;
+	color: black;
 }
 a:hover{
 	text-decoration: underline;
@@ -72,38 +70,39 @@ h5{
 	padding-right: 5px;
 	margin: auto;
 	text-align: center;
-	background-color: #FFE8C6;
+	background-color: rgba(121, 113, 127, 0.5);
 	position: relative;
 }
 #about{
-	width: 530px;
+	width: 40%;
 	height: 480px;
-	margin: 10px;
+	margin: 20px;
+	padding: 10px;
 	float: left;
-	background-color: #FFE8C6;
+	background-color: rgba(121, 113, 127, 0.5);
 }
 #project{
-	width: 530px;
+	width: 40%;
 	height: 480px;
-	margin: 10px;
+	margin: 20px;
 	float: right;
-	background-color: #FFE8C6;
+	background-color: rgba(121, 113, 127, 0.5);
 	display: inline-block;
 }
 #technical{
-	width: 550px;
+	width: 40%;
 	height: 470px;
-	margin: 15px;
+	margin: 20px;
 	float: left;
-	background-color: #FFE8C6;
+	background-color: rgba(121, 113, 127, 0.5);
 	text-align: inherit;
 }
 #cultural{
-	width: 550px;
+	width: 40%;
 	height: 470px;
 	float: right;
-	margin: 15px;
-	background-color: #FFE8C6;
+	margin: 20px;
+	background-color: rgba(121, 113, 127, 0.5);
 	text-align: inherit;
 }
 .center{
@@ -113,6 +112,7 @@ h5{
 p{
 	text-align: center;
 	width: inherit;
+	color: white;
 }
 .nav{
 	height: 30px;
