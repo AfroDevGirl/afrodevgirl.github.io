@@ -1,28 +1,27 @@
 body{
+	background-image: url("body.jpg");
 	background-color: black;
+	background-position: center top;
+	background-repeat: no-repeat;
 	font-family: 'Oswald', sans-serif;
 }
 header{
   	height: 150px;
   	width: 100%;
-  	background-color: #4B00BF;
+  	background-color: #4A2560;
   	position: relative;
-  	border: 2px solid black;
+  	border: 2px solid black 0.5;
   	margin-bottom: 5em;
   	border-radius: 4px;
 }
 /*#content{
 	width: 100%;
-  	background-color: #FFA214;
   	margin: auto;
   	margin-top: 5em;
-  	border: 2px solid black;
-  	border-radius: 4px;
 }*/
 footer{
 	height: 150px;
   	width: 100%;
-  	background-color: #4B00BF;
   	position: relative;
   	margin-top: 5em;
   	clear: both;
@@ -30,22 +29,22 @@ footer{
 a:link{
 	text-align: right;
 	text-decoration: none;
-	color: black;
-}
-a:hover{
-	text-decoration: underline;
 	color: white;
-	height: 30px;
-	width: 100px;
-	border-radius-right: 10px;
-	border-radius-left: 10px; 
-	background-color: black;
-	margin-top: 120px;
-
+	background-size: 100px 30px;
 }
 a:visited{
-	color: red;
+	color: #527DE5;
+	background-size: 100px 30px;
 }
+a:hover{
+	color: white;
+	font-size: 20px;
+	border-radius-right: 10px;
+	border-radius-left: 10px; 
+	background-size: 100px 30px;
+
+}
+
 h3{
 	text-align: center;
 	font-weight: bolder;
@@ -60,9 +59,10 @@ h5{
 }
 #nav1{}
 .profile{
-	width: 100px;
-	height: 100px;
-	margin: 10px; 
+	width: 500px;
+	height: 500px;
+	margin: 20px;
+	display: inline-block; 
 }
 #post{
 	width: 1000px;
@@ -70,23 +70,23 @@ h5{
 	padding-right: 5px;
 	margin: auto;
 	text-align: center;
-	background-color: rgba(121, 113, 127, 0.5);
+	background-color: #4A2560;
 	position: relative;
 }
 #about{
-	width: 40%;
-	height: 480px;
+	width: 60%;
+	height: 500px;
 	margin: 20px;
 	padding: 10px;
-	float: left;
-	background-color: rgba(121, 113, 127, 0.5);
+	float: right;
+	background-image: url("content.png");
+	display: inline-block;
 }
 #project{
 	width: 40%;
 	height: 480px;
-	margin: 20px;
-	float: right;
-	background-color: rgba(121, 113, 127, 0.5);
+	position: center center;
+	background-image: url("content.png");
 	display: inline-block;
 }
 #technical{
@@ -94,7 +94,7 @@ h5{
 	height: 470px;
 	margin: 20px;
 	float: left;
-	background-color: rgba(121, 113, 127, 0.5);
+	background-image: url("content.png");
 	text-align: inherit;
 }
 #cultural{
@@ -102,22 +102,23 @@ h5{
 	height: 470px;
 	float: right;
 	margin: 20px;
-	background-color: rgba(121, 113, 127, 0.5);
+	background-image: url("content.png");
 	text-align: inherit;
 }
 .center{
 	text-align: center;
 	width: inherit;
+	position: center center;
 }
 p{
-	text-align: center;
+	text-align: left;
 	width: inherit;
 	color: white;
+	position: center;
 }
 .nav{
 	height: 30px;
 	width: 100px;
-	border: 1px solid black;
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
@@ -128,10 +129,19 @@ p{
 .footnav{
 	height: 30px;
 	width: 100px;
+	color: white;
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
 	float:right;
 	position: relative;
-	margin-bottom: 120px;
+	margin-top: 120px;
+}
+form{
+	background-color: white;
+	height: 300px;
+	width: 400px;
+	position: center center;
+	margin: auto;
+	padding: 20px;
 }
