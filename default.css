@@ -4,6 +4,7 @@ body{
 	background-position: center top;
 	background-repeat: no-repeat;
 	font-family: 'Oswald', sans-serif;
+	color: white;
 }
 header{
   	height: 150px;
@@ -48,14 +49,17 @@ a:hover{
 h3{
 	text-align: center;
 	font-weight: bolder;
+	color: white;
 }
 h4{
 	text-align: center;
 	font-weight: bold;
+	color: white;
 }
 h5{
 	text-align: center;
 	font-weight: lighter;
+	color: white;
 }
 #nav1{}
 .profile{
