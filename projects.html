@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="default.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<script src="war.js"></script>
 	</head>
 	<body>
 		 <!-- Header section -->
@@ -18,8 +19,16 @@
 		</header>
 		<!-- Content Section -->
 		<div id="content">
-			<img src="profile.jpg" class="profile"/>
-			<div id="about"><p class="center">Hello and welcome to my personal blog and portfolio. Here you'll find my website and other coding work along with personal thoughts and general updates on what i'm doing these days. I am a Bowling Green State University Alumni class of '12 with a degree in Theatrical Design. After I graduated I decided theatre wasn't really for me and now I'm a student at Dev Bootcamp. Learn more <a href="http://amoody2108.github.io/about.html">here</a></p></div> 
+			<div id="post">
+				<div id="game">
+					<h2 class="center">Let's Play War!</h2>
+					<button id="start"><a onClick="shuffleDeck(createDeck());">Start Game</button>
+					<button id="flip"><a onClick="playRound();">Play Round</button>
+					<div id="player"></div>
+					<div id="computer"></div>
+					<button id="end"><a href="#" onClick="countCards();">End Game</button>
+				</div>
+			</div> 
 			
 		</div>
 		<!-- Footer Section -->
