@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Alexis Moody Portfolio</title>
+		<title>Alexis Moody</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="default.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<script src="war.js"></script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
 			<img src=""/> 
 			<div class="nav"><a href="http://amoody2108.github.io/contact.html">Contact</a></div>
+			<div class="nav"><a href="http://amoody2108.github.io/about.html">About</a></div>
 			<div class="nav"><a href="http://amoody2108.github.io/resume.html">Resume</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io">About</a></div>
 			<div class="nav"><a href="http://amoody2108.github.io/projects.html">Projects</a></div>
 			<div class="nav"><a href="http://amoody2108.github.io/blog_index.html">Blog</a></div>
 		</header>
 		<!-- Content Section -->
 		<div id="content">
 			<div id="post">
-				<a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a>
-			</div>
+				<div id="game">
+					<h2 class="center">Let's Play War!</h2>
+					<button id="start"><a onClick="shuffleDeck(createDeck());">Start Game</button>
+					<button id="flip"><a onClick="playRound();">Play Round</button>
+					<div id="player"></div>
+					<div id="computer"></div>
+					<button id="end"><a href="#" onClick="countCards();">End Game</button>
+				</div>
+			</div> 
+			
 		</div>
 		<!-- Footer Section -->
 		<footer>

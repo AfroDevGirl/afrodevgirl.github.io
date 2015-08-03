@@ -185,26 +185,17 @@ function war(round){
 		window.alert("ANOTHER war has started!");
 		war(round);
 	}else if(playerWar[3].number < computerWar[3].number){
-		for(x in round){
-			round[x].assigned = "computer";
-			computer.deck.push(round[x]);
-		};
+		for(x in playerWar){playerWar[x].assigned = "computer";};
+		computer.deck.push(round[0],round[1],round[2],round[3],round[4],round[5],round[6],round[7],round[8],round[9]);
 		window.alert("The computer won this round!");
 	}else if(playerWar[3].number > computerWar[3].number){
-		for(x in round){
-			computerWar[x].assigned = "player1";
-			player.deck.push(round[x]);
-		};
+		for(x in computerWar){computerWar[x].assigned = "player1";};
+		player.deck.push(round[0],round[1],round[2],round[3],round[4],round[5],round[6],round[7],round[8],round[9]);
 		window.alert("You won this round!");
 	};
-	computer.count = computer.deck.length;
-	player.count = player.deck.length;
 };
 
 function countCards(){
-	computer.count = computer.deck.length;
-	player.count = player.deck.length;
-
 	if (player.count == computer.count){
 		window.alert("Both players have " + player.count + " cards. A draw has occurred");
 	}else if(player.count < computer.count){
