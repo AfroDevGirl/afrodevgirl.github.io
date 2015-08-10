@@ -179,7 +179,7 @@ function war(round){
 	round = round.concat(computerWar);
 	
 	document.getElementById("player").innerHTML = "Your War trump card is: " + playerWar[3].face + " of " + playerWar[3].suit;
-	document.getElementById("computer").innerHTML = "The computer's War trump card is are: " + computerWar[3].face + " of " + computerWar[3].suit;
+	document.getElementById("computer").innerHTML = "The computer's War trump card is: " + computerWar[3].face + " of " + computerWar[3].suit;
 	
 	if (playerWar[3].number == computerWar[3].number){
 		window.alert("ANOTHER war has started!");
