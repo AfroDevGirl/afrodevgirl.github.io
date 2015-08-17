@@ -5,16 +5,42 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../default.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">	
+			$(document).ready(function() {
+				$('.topMenu > li').bind('mouseover', openSubMenu);
+				$('.topMenu > li').bind('mouseout', closeSubMenu);
+				function openSubMenu() {
+					$(this).find('ul').css('visibility', 'visible');	
+				};
+		
+				function closeSubMenu() {
+					$(this).find('ul').css('visibility', 'hidden');	
+				};
+			});
+		</script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<img src=""/> 
-			<div class="nav"><a href="http://amoody2108.github.io/contact.html">Contact</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io">About</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io/resume.html">Resume</a></div>
-			<div class="nav">Projects</div>
-			<div class="nav"><a href="http://amoody2108.github.io/blog_index.html">Blog</a></div>
+			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a>
+			<ul class="topMenu">
+				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
+					<ul>
+						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
+						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
+					</ul>
+				</li>
+				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
+					<ul>
+						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
+						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
+					</ul>
+				</li>
+				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
+				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
+				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
+			</ul>
 		</header>
 		<!-- Content Section -->
 		<div id="content">
@@ -23,8 +49,8 @@
 				<h4>Forcing Values Together Since 1995</h4>
 				<h5>7/13/2015</h5>
 				<p>And we’re back! I hope you had a great 4th of July, I spent it mostly working and thinking about coding. Speaking of coding, let’s get down to brass tax. This past week we really started to get into the nitty gritty of Ruby methods. We were manipulating arrays and hashes (aka: a list of values) in a way that was challenging but incredibly enlightening. I come to you today with a nifty little method, used by arrays, called “group_by”.</p>
-				<p>The “group_by” method is, essentially, a way to collect all of the things that are similar in an array and group them together in a hash. For more information on the difference between arrays and hashes take a look at my blog <a href="">here</a>. So, for example, if we want to look at all of the similarly long words in an array we would write something like this.</p><img src="../group_by_1.png"><p>The “group_by” method looks at every single value in the array and assigns it to the key that is equal to its length. The result would look like this for the beers array.</p> <img src="../group_by_1_print.png">
-				<p>Let’s look at some more examples of how to use the “group_by” in Ruby. Checking to see how many times a value is in an array is a very useful algorithm to have in your back pocket. Here we take the array, in this case “numbers”, and group together all of its instances. We then assign the length of the new hash to the value it has.</p> <img src="../group_by_2.png"><p>By using the “inject” method we are telling the computer to count how many times there are the same words in our groups. We then get an output like this.</p><img src="../group_by_2_print.png"><p>We could then sort the hash to get value we’re looking for. The possibilities are limitless!</p>
+				<p>The “group_by” method is, essentially, a way to collect all of the things that are similar in an array and group them together in a hash. For more information on the difference between arrays and hashes take a look at my blog <a href="http://amoody2108.github.io/blog/t3-arrays-hashes">here</a>. So, for example, if we want to look at all of the similarly long words in an array we would write something like this.</p><img src="../images/group_by_1.png"><p>The “group_by” method looks at every single value in the array and assigns it to the key that is equal to its length. The result would look like this for the beers array.</p> <img src="../images/group_by_1_print.png">
+				<p>Let’s look at some more examples of how to use the “group_by” in Ruby. Checking to see how many times a value is in an array is a very useful algorithm to have in your back pocket. Here we take the array, in this case “numbers”, and group together all of its instances. We then assign the length of the new hash to the value it has.</p> <img src="../images/group_by_2.png"><p>By using the “inject” method we are telling the computer to count how many times there are the same words in our groups. We then get an output like this.</p><img src="../images/group_by_2_print.png"><p>We could then sort the hash to get value we’re looking for. The possibilities are limitless!</p>
 				<p>These are just two of the many ways this method can be used. I’ll be updating this post with some more examples in the coming days/weeks.</p>
 			</div>
 		</div>

@@ -5,53 +5,80 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="default.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">	
+			$(document).ready(function() {
+				$('.topMenu > li').bind('mouseover', openSubMenu);
+				$('.topMenu > li').bind('mouseout', closeSubMenu);
+				
+				function openSubMenu() {
+					$(this).find('ul').css('visibility', 'visible');	
+				};
+		
+				function closeSubMenu() {
+					$(this).find('ul').css('visibility', 'hidden');	
+				};
+			});
+		</script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<img src=""/> 
-			<div class="nav"><a href="http://amoody2108.github.io/contact.html">Contact</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io/resume.html">Resume</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io">About</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io/projects.html">Projects</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io/blog_index.html">Blog</a></div>
+			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a>
+				<ul class="topMenu">
+				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
+					<ul>
+						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
+						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
+					</ul>
+				</li>
+				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
+					<ul>
+						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
+						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
+					</ul>
+				</li>
+				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
+				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
+				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
+			</ul>
 		</header>
 		<!-- Content Section -->
 		<div id="content">
 			<div id="post">
 				<ul>
-					<li>Education</li>
-					<li>Skills</li>
-					<li>Work Experience</li>
-					<li>Volunteer Work</li>
+					<li><a href= "http://amoody2108.github.io/resume.html/#education">Education</a></li>
+					<li><a href= "http://amoody2108.github.io/resume.html/#skills">Skills</a></li>
+					<li><a href= "http://amoody2108.github.io/resume.html/#work">Work Experience</a></li>
+					<li><a href= "http://amoody2108.github.io/resume.html/#volunteer">Volunteer Work</a></li>
 				</ul>
-				<h1>Education</h1>
-				<p class="center">ABC UNIVERSITY — Sometown, NH * Bachelor of Science, Major in Information Technology, 2011</p>
-				<ul>
-					<li>Honors: Graduated cum laude (GPA: 3.53); inductee, Golden Key Honor Society; recipient, John Doe Academic Scholarship; Dean’s List, 2009, 2010, 2011.</li>
-					<li>Senior Project: Earned “A” grade on capstone project as co-developer of Web-based, customized enterprise software solution that integrated business processes for a nonprofit organization. Delivered turnkey application that reduced manual data entry, saving hundreds of personnel hours monthly.</li>
-					<li>Course Highlights: Enterprise Application Development, Security, Java/C/VB Programming, IT Project Management, Database Programming, Web Design, Computer Architecture</li>
-				</ul> 
+				<h1 id="#education">Education</h1>
+				<p class="center">Dev Bootcamp — Chicago, IL * October, 2015</p>
+				<p class="center">Bowling Green State University — Bowling Green, OH * Bachelor of Arts in Communications, Major in Theatre: Specialization Design/Technical, 2012</p>
 
-				<h1>Skills</h1>
+				<h1 id="#skills">Skills</h1>
 				<ul>
-					<li>Programming/Languages: Java (J2SDK v1.3, J2EE, EJB, Servlets, JSP, Struts, J2ME, JavaBeans, RMI, JDBC, Java Applets); C; C++; Visual Basic; SharePoint; .Net; PHP; MySQL; HTML</li>
-					<li>Source Code Control: Visual SourceSafe, Ant</li>
-					<li>Databases: Oracle 8.x/9.x, SQL Server, MS Access</li>
-					<li>Design & IDE Tools: Rational Rose, UML, WSAD, Visual Café, VJ++, WebLogic</li>
-					<li>Office Tools: MS Word, Excel, PowerPoint, Outlook, Visio</li>
-					<li>Operating Systems: Windows 7/Vista/Server 2008, Mac OS X</li>
+					<li>- Programming/Languages: C++, Visual Basic, Ruby, Javascript, PHP, MySQL, HTML, CSS, jQuery</li>
+					<li>- Databases: SQL Server</li>
+					<li>- Design Tools: Adobe Creative Suite, Mockflow</li>
+					<li>- Office Tools: MS Word, Excel, PowerPoint, Outlook, Visio, Prezi, Slack</li>
+					<li>- Operating Systems: Windows, Mac OS, Linux</li>
 				</ul>
-				<h1>Work Experience</h1>
-				<p class="center">ABC COMPANY — Sometown, NH * Computer Programmer Intern, 2010 to 2011</p>
+				<h1 id="#work">Work Experience</h1>
+				<p class="center">Lyft — Chicago, IL * Driver, 07/2014 to present</p>
+				<p class="center">Starbucks — Chicago, IL * Barista, 03/2014 to 09/2014</p>
+				<p class="center">Rogue Sports TV — Lafayette, IN * Owner, 06/2013 to 03/2014</p>
 				<ul>
-					<li>Selected for nine-month internship out of more than 150 applicants.</li>
-					<li>Handled database and Web site programming tasks (primarily using Java, C, C++, HTML and SharePoint), working an average of 15 hours per week while maintaining a 3.5 GPA.</li>
-					<li>Redesigned Internet and intranet pages. Used SEO best practices to optimize Web site for search engine rankings and improved functionality of company database.</li>
-					<li>Resolved memory corruption and other technical issues by leveraging strengths in coding, debugging and integration testing.</li>
+					<li>- As the owner of a smal sports broadcasting company I was in charge of all content and customer relations.</li>
+					<li>- I also took care of all of the marketing and maintaining of the website/social media.</li>
 				</ul>
-				<h1>Volunteer Work</h1>
-				<p class="center">Volunteered during summers for Habitat for Humanity (2008, 2010) and ABC Homeless Shelter (2009).</p>
+				<h1 id="#volunteer">Volunteer Work</h1>
+				<p class="center">The Quidditch Post * Media Director, 03/2015 to present</p>
+				<ul>
+					<li>- I manage and produce all multimedia content for the website including web shows, podcasts, and live broadcasts.</li>
+					<li>- I recruit and manage all show talent along with all editors.</li>
+					<li>- I communicate and collaborate with department directors from around the word to put forth a unified brand.</li>
+				</ul>
 			</div>
 		</div>
 		<!-- Footer Section -->

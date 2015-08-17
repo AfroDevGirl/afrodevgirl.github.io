@@ -4,39 +4,71 @@
 		<title>Alexis Moody Portfolio</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="default.css"/>
+		<link href="/stylesheets/public/forms/css/index.0199.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<script type="text/javascript">var z13mthbg0h36xnz;(function(d, t) {
+			var s = d.createElement(t), options = {
+				'userName':'amoody2108',
+				'formHash':'z13mthbg0h36xnz',
+				'autoResize':true,
+				'height':'583',
+				'async':true,
+				'host':'wufoo.com',
+				'header':'show',
+				'ssl':true};
+				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+				s.onload = s.onreadystatechange = function() {
+				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+				try { z13mthbg0h36xnz = new WufooForm();z13mthbg0h36xnz.initialize(options);z13mthbg0h36xnz.display(); } catch (e) {}};
+				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+				})(document, 'script');
+		</script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">	
+			$(document).ready(function() {
+				$('.topMenu > li').bind('mouseover', openSubMenu);
+				$('.topMenu > li').bind('mouseout', closeSubMenu);
+				$('.profile').fadeIn(6000);
+				function openSubMenu() {
+					$(this).find('ul').css('visibility', 'visible');	
+				};
+		
+				function closeSubMenu() {
+					$(this).find('ul').css('visibility', 'hidden');	
+				};
+			});
+		</script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<img src=""/> 
-			<div class="nav"><a href="http://amoody2108.github.io/contact.html">Contact</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io">About</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io/resume.html">Resume</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io/projects.html">Projects</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io/blog_index.html">Blog</a></div>
+			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a>
+			<ul class="topMenu">
+				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
+					<ul>
+						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
+						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
+					</ul>
+				</li>
+				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
+					<ul>
+						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
+						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
+					</ul>
+				</li>
+				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
+				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
+				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
+			</ul>
 		</header>
 		<!-- Content Section -->
 		<div id="content" class="center">
 			<div id="project">
-				<form action="http://amoody2108.github.io/contact.html" method="get">
-					<div>
-						<label for="name">Name:</label>
-						<input type="text" id="name"/>
-					</div>
-					<div>
-						<label for="mail">E-mail:</label>
-						<input type="email" id="mail"/>
-					</div>
-					<div>
-						<label for="msg">Message:</label>
-						<textarea id="msg">Type your message here</textarea>
-					</div>
-					<div class="button">
-						<button type="submit">Submit</button>
-					</div>
-				</form>
-			</div>
+			<form>
+				<div id="wufoo-z13mthbg0h36xnz">
+				Fill out my <a href="https://amoody2108.wufoo.com/forms/z13mthbg0h36xnz">online form</a>.
+				</div>
+			</form>
 		</div>
 		<!-- Footer Section -->
 		<footer>
