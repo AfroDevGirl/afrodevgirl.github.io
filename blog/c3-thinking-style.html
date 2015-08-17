@@ -5,16 +5,43 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../default.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+			<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">	
+			$(document).ready(function() {
+				$('.topMenu > li').bind('mouseover', openSubMenu);
+				$('.topMenu > li').bind('mouseout', closeSubMenu);
+				$('.profile').fadeIn(6000);
+				function openSubMenu() {
+					$(this).find('ul').css('visibility', 'visible');	
+				};
+		
+				function closeSubMenu() {
+					$(this).find('ul').css('visibility', 'hidden');	
+				};
+			});
+		</script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<img src=""/> 
-		<div class="nav"><a href="http://amoody2108.github.io/contact.html">Contact</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io">About</a></div>
-			<div class="nav"><a href="http://amoody2108.github.io/resume.html">Resume</a></div>
-			<div class="nav">Projects</div>
-			<div class="nav"><a href="http://amoody2108.github.io/blog_index.html">Blog</a></div>
+			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a> 
+			<ul class="topMenu">
+				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
+					<ul>
+						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
+						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
+					</ul>
+				</li>
+				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
+					<ul>
+						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
+						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
+					</ul>
+				</li>
+				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
+				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
+				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
+			</ul>
 		</header>
 		<!-- Content Section -->
 		<div id="content">
