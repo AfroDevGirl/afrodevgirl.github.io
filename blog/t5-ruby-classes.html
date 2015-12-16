@@ -1,71 +1,38 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Alexis Moody Blog</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../default.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript">	
-			$(document).ready(function() {
-				$('.topMenu > li').bind('mouseover', openSubMenu);
-				$('.topMenu > li').bind('mouseout', closeSubMenu);
-				function openSubMenu() {
-					$(this).find('ul').css('visibility', 'visible');	
-				};
-		
-				function closeSubMenu() {
-					$(this).find('ul').css('visibility', 'hidden');	
-				};
-			});
-		</script>
+		<title>Alexis Moody</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="../default.scss"/>
+	    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <script type="text/javascript" src="../jquery.js"></script>
+	    <script type="text/javascript" src="../background.js"></script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a> 
-			<ul class="topMenu">
-				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
-						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
-				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
-				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
-			</ul>
+			<h2><a href="http://amoody2108.github.io">Alexis Moody | Web Developer</a>
+		        <a href="https://www.linkedin.com/in/alexismoody" target="_blank"><i class="fa fa-linkedin" style="float: right;"></i></a>
+		        <a href="http://www.twitter.com/AfroDevGirl" target="_blank"><i class="fa fa-twitter" style="float: right;"></i></a>
+		        <a href="http://www.github.com/amoody2108" target="_blank"><i class="fa fa-github" style="float: right;"></i></a>
+        	</h2>
 		</header>
 		<!-- Content Section -->
-		<div id="content">
-			<div id="post">
-				<h3>Ruby Classes</h3>
-				<h4>Taking you to school</h4>
-				<h5>7/20/15</h5>
-				<p>Welcome to Class everyone! No, you don’t need a textbook or pen and paper. Today we’ll just be talking about classes in Ruby. I’d like to just tackle everything by showing you so let’s jump in!</p>
-				<p>If you’ve checked out my <a href="http://amoody2108.github.io/about.html">biography</a> then you saw that I play quidditch. The sport is a ton of fun with teams all around the world. So many that it’s really hard to keep track. What if we were able to easily identify every team by it’s name, location, and twitter handle? Well we could easily just create a class called QuidditchTeam (class identifiers must use camel case!) that takes an input of the team name, location, and twitter. Then we can access that information as much as we want whenever we set a new instance of the QuidditchTeam class. Let’s take a look:</p>
-				<img src="../images/QuidditchTeam_class.png">
-				<p>We started off with defining the class simply enough. Notice how arguments are not declared in the class definition? That’s because they are declared in the initialize method. Every class needs to have that initialize method where instance variables, signified by the “@” symbol, and argument errors are raised. Instance variables can be used by all of the methods in the class! Easy as pie, right? Then we move on to declaring the methods that will be used by our new quidditch team. These methods are simple enough, they just print out the information we’ve just inputed. So when we create a new QuidditchTeam and call these methods we’re able to see it in a better format!</p>
-				<img src="../images/cp_instance.png">
-				<img src="../images/cp_output.png">
-				<p>The code still works for a new team as well: </p>
-				<img src="../images/bg_instance.png">
-				<img src="../images/bg_output.png">
-				<p>And just like that you can easily access the information of any quidditch team you’d like. Classes are wonderful way to manipulate information and organize your code in an efficient way.</p>
-			</div>
-		</div>
-		<!-- Footer Section -->
-		<footer>
-			<div class="footnav"><a href="https://www.twitter.com/QP_VPMedia">Twitter</a></div>
-			<div class="footnav"><a href="https://www.facebook.com/DarkLight12">Facebook</a></div>
-			<div class="footnav"><a href="https://www.linkedin.com/in/amoody12">Linked-In</a></div>
-			<div class="footnav"><a href="mailto:amoodyldes@gmail.com">Email</a></div>
-		</footer>
+		<article id="one" data-color="#0000ff" style="width: 100%;">
+			<h1>Ruby Classes</h1>
+			<h2>Taking you to school</h2>
+			<h3>7/20/15</h3>
+			<p>Welcome to Class everyone! No, you don’t need a textbook or pen and paper. Today we’ll just be talking about classes in Ruby. I’d like to just tackle everything by showing you so let’s jump in!</p>
+			<p>If you’ve checked out my <a href="http://amoody2108.github.io/about.html">biography</a> then you saw that I play quidditch. The sport is a ton of fun with teams all around the world. So many that it’s really hard to keep track. What if we were able to easily identify every team by it’s name, location, and twitter handle? Well we could easily just create a class called QuidditchTeam (class identifiers must use camel case!) that takes an input of the team name, location, and twitter. Then we can access that information as much as we want whenever we set a new instance of the QuidditchTeam class. Let’s take a look:</p>
+			<img src="../images/QuidditchTeam_class.png">
+			<p>We started off with defining the class simply enough. Notice how arguments are not declared in the class definition? That’s because they are declared in the initialize method. Every class needs to have that initialize method where instance variables, signified by the “@” symbol, and argument errors are raised. Instance variables can be used by all of the methods in the class! Easy as pie, right? Then we move on to declaring the methods that will be used by our new quidditch team. These methods are simple enough, they just print out the information we’ve just inputed. So when we create a new QuidditchTeam and call these methods we’re able to see it in a better format!</p>
+			<img src="../images/cp_instance.png">
+			<img src="../images/cp_output.png">
+			<p>The code still works for a new team as well: </p>
+			<img src="../images/bg_instance.png">
+			<img src="../images/bg_output.png">
+			<p>And just like that you can easily access the information of any quidditch team you’d like. Classes are wonderful way to manipulate information and organize your code in an efficient way.</p>
+		</article>
 	</body>
 </html>

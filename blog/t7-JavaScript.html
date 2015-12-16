@@ -1,68 +1,35 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Alexis Moody Blog</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../default.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript">	
-			$(document).ready(function() {
-				$('.topMenu > li').bind('mouseover', openSubMenu);
-				$('.topMenu > li').bind('mouseout', closeSubMenu);
-				function openSubMenu() {
-					$(this).find('ul').css('visibility', 'visible');	
-				};
-		
-				function closeSubMenu() {
-					$(this).find('ul').css('visibility', 'hidden');	
-				};
-			});
-		</script>
+		<title>Alexis Moody</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="../default.scss"/>
+	    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <script type="text/javascript" src="../jquery.js"></script>
+	    <script type="text/javascript" src="../background.js"></script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a>
-			<ul class="topMenu">
-				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
-						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
-				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
-				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
-			</ul>
+			<h2><a href="http://amoody2108.github.io">Alexis Moody | Web Developer</a>
+		        <a href="https://www.linkedin.com/in/alexismoody" target="_blank"><i class="fa fa-linkedin" style="float: right;"></i></a>
+		        <a href="http://www.twitter.com/AfroDevGirl" target="_blank"><i class="fa fa-twitter" style="float: right;"></i></a>
+		        <a href="http://www.github.com/amoody2108" target="_blank"><i class="fa fa-github" style="float: right;"></i></a>
+        	</h2>
 		</header>
 		<!-- Content Section -->
-		<div id="content">
-			<div id="post">
-				<h3>Hashes vs Objects</h3>
-				<h4>Let's Hash It Out</h4>
-				<h5>08/03/2015</h5>
-				<p>So we dived head first into JavaScript this week and I was pretty nervous about switching languages so quickly. I was pleasantly surprised when I came across the syntax for a Javascript object. You see, they are incredibly similar. In fact there are very few things that are functionally different between JS Objects and Ruby Hashes.</p>
-				<img src="../images/standard-hash.png">
-				<p>Above is an example of a standard hash. The hash name is defined as superheroes and the curly brackets following the superhero definition is what tells the ruby compiler that this object is a hash. Each key value is defined with the colon preceding the key name and a "=>" that assigns the a value to the key.</p>
-				<img src="../images/js-object.png">
-				<p>In this example of a JS object the definition is relatively similiar. A "var" must be used to define any variable in javascript, including objects and even functions. The curly brackets are still used to denote an object with key-value pairs and commas are used after each line to tell the compiler that there are more keys in the object. One major difference is that the keys care defined by a colon after the key name and a "=>" is not necessary to assign a value to the key. Another really cool aspect of objects is that you can actually put a function as a property value. You could potentially change values based on what other values are in a function and change them automatically without recalling that function within your code. An example of this can be seen below.</p>
-				<img src="../images/function-property.png">
-				<p>So that's about it on the differences. Javascript comes with way less pre-loaded methods/functions so manipulating objects can be more cumbersome but ultimately they are very similar and a great programming tool.</p>
-			</div>
-		</div>
-		<!-- Footer Section -->
-		<footer>
-			<div class="footnav"><a href="https://www.twitter.com/QP_VPMedia">Twitter</a></div>
-			<div class="footnav"><a href="https://www.facebook.com/DarkLight12">Facebook</a></div>
-			<div class="footnav"><a href="https://www.linkedin.com/in/amoody12">Linked-In</a></div>
-			<div class="footnav"><a href="http://amoody2108.github.io/contact.html">Email</a></div>
-		</footer>
+		<article id="one" data-color="#0000ff" style="width: 100%;">
+			<h1>Hashes vs Objects</h1>
+			<h2>Let's Hash It Out</h2>
+			<h3>08/03/2015</h3>
+			<p>So we dived head first into JavaScript this week and I was pretty nervous about switching languages so quickly. I was pleasantly surprised when I came across the syntax for a Javascript object. You see, they are incredibly similar. In fact there are very few things that are functionally different between JS Objects and Ruby Hashes.</p>
+			<img src="../images/standard-hash.png">
+			<p>Above is an example of a standard hash. The hash name is defined as superheroes and the curly brackets following the superhero definition is what tells the ruby compiler that this object is a hash. Each key value is defined with the colon preceding the key name and a "=>" that assigns the a value to the key.</p>
+			<img src="../images/js-object.png">
+			<p>In this example of a JS object the definition is relatively similiar. A "var" must be used to define any variable in javascript, including objects and even functions. The curly brackets are still used to denote an object with key-value pairs and commas are used after each line to tell the compiler that there are more keys in the object. One major difference is that the keys care defined by a colon after the key name and a "=>" is not necessary to assign a value to the key. Another really cool aspect of objects is that you can actually put a function as a property value. You could potentially change values based on what other values are in a function and change them automatically without recalling that function within your code. An example of this can be seen below.</p>
+			<img src="../images/function-property.png">
+			<p>So that's about it on the differences. Javascript comes with way less pre-loaded methods/functions so manipulating objects can be more cumbersome but ultimately they are very similar and a great programming tool.</p>
+		</article>
 	</body>
 </html>

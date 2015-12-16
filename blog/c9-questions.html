@@ -1,65 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Alexis Moody Blog</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../default.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript">	
-			$(document).ready(function() {
-				$('.topMenu > li').bind('mouseover', openSubMenu);
-				$('.topMenu > li').bind('mouseout', closeSubMenu);
-				
-				function openSubMenu() {
-					$(this).find('ul').css('visibility', 'visible');	
-				};
-		
-				function closeSubMenu() {
-					$(this).find('ul').css('visibility', 'hidden');	
-				};
-			});
-		</script>
+		<title>Alexis Moody</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="../default.scss"/>
+	    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <script type="text/javascript" src="../jquery.js"></script>
+	    <script type="text/javascript" src="../background.js"></script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<a href="http://amoody2108.github.io"><img src="../images/me_logo.gif" class="logo"/></a> 
-			<ul class="topMenu">
-				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
-						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
-				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
-				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
-			</ul>
+			<h2><a href="http://amoody2108.github.io">Alexis Moody | Web Developer</a>
+		        <a href="https://www.linkedin.com/in/alexismoody" target="_blank"><i class="fa fa-linkedin" style="float: right;"></i></a>
+		        <a href="http://www.twitter.com/AfroDevGirl" target="_blank"><i class="fa fa-twitter" style="float: right;"></i></a>
+		        <a href="http://www.github.com/amoody2108" target="_blank"><i class="fa fa-github" style="float: right;"></i></a>
+        	</h2>
 		</header>
 		<!-- Content Section -->
-		<div id="content">
-			<div id="post">
-				<h3>Question Everything</h3>
-				
-				<h5>08/16/2015</h5>
-				<p>So this is it. I'm about to head into the massive life changing 2 month adventure that is on-campus DBC. I have to admit i'm insanely nervous. This past week has been a bit of a roller coaster and I feel like this is all or nothing. I have to be successful here or I'm going to be in a really tough spot. It doesn't help that I feel like i'm always catching up. I feel comfortable and completely out of my element at the same time. That said the past couple of months in Phase 0 have really helped me ask for more help and just ask questions in general.</p>
-				<p>At the beginning of Phase 0 I noted that one of my weaknesses is that it's very hard for me to ask for help. I got a bit of a rude awakening with all of the questions I asked and others asked me over the course of Phase 0. It's so important to constanly be questioning what you do or do not know. It's almost more important than the languages we learn. At least that's what i've gathered. I've found that a good question is specific and open to discussion. There are no right answers in most anything (except maybe quantum physics) and especially with languages as variable and dynamic as Ruby and Javascript. There are always new things to learn through asking new questions and discovering new things.</p>
-				<p>All of that said I am beyond ready to really get into all of the amazing pieces of the programming puzzle. I'm ready to start my life anew.</p>
-			</div>
-		</div>
-		<!-- Footer Section -->
-		<footer>
-			<div class="footnav"><a href="https://www.twitter.com/QP_VPMedia">Twitter</a></div>
-			<div class="footnav"><a href="https://www.facebook.com/DarkLight12">Facebook</a></div>
-			<div class="footnav"><a href="https://www.linkedin.com/in/amoody12">Linked-In</a></div>
-			<div class="footnav"><a href="http://amoody2108.github.io/contact.html">Email</a></div>
-		</footer>
+		<article id="one" data-color="#0000ff" style="width: 100%;">
+			<h1>Question Everything</h1>
+			<h3>08/16/2015</h3>
+			<p>So this is it. I'm about to head into the massive life changing 2 month adventure that is on-campus DBC. I have to admit i'm insanely nervous. This past week has been a bit of a roller coaster and I feel like this is all or nothing. I have to be successful here or I'm going to be in a really tough spot. It doesn't help that I feel like i'm always catching up. I feel comfortable and completely out of my element at the same time. That said the past couple of months in Phase 0 have really helped me ask for more help and just ask questions in general.</p>
+			<p>At the beginning of Phase 0 I noted that one of my weaknesses is that it's very hard for me to ask for help. I got a bit of a rude awakening with all of the questions I asked and others asked me over the course of Phase 0. It's so important to constanly be questioning what you do or do not know. It's almost more important than the languages we learn. At least that's what i've gathered. I've found that a good question is specific and open to discussion. There are no right answers in most anything (except maybe quantum physics) and especially with languages as variable and dynamic as Ruby and Javascript. There are always new things to learn through asking new questions and discovering new things.</p>
+			<p>All of that said I am beyond ready to really get into all of the amazing pieces of the programming puzzle. I'm ready to start my life anew.</p>
+		</article>
 	</body>
 </html>

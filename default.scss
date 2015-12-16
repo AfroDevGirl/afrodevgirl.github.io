@@ -1,0 +1,212 @@
+/*Containers*/
+header{
+	width:100%;
+	height: 60px;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	position: fixed;
+	top: 0px;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	transition: all 500ms; 
+	will-change: background;
+	background: #ffffff; 
+	color: #000000;
+}
+img {
+	max-height: 500px;
+	max-width: 100%;
+	margin: 10px;
+}
+article{
+	display: inline; 
+	float: right;
+	width: 100%; 
+	text-align: right; 
+	height: 100vh; 
+	margin: 6em 0 0 0;
+}
+/*Headers and text*/
+h2{
+	margin: 0;
+	padding: 10px;
+	color: #9053CC;
+}
+i{
+	margin: 5px;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+h3, h4, h5, h6 {
+	margin: 1em;
+}
+article h2{
+	color: inherit;
+	margin: 1em;
+}
+h1{
+	font-size: 15em; 
+	font-weight: 900; 
+	margin: 0 0.1em; 
+}
+p, ul{
+	width: 50%; 
+	float: right; 
+	font-size: 1.1em; 
+	margin: 1em; 
+	list-style: none;
+}
+
+/*Classes*/
+.clear{
+	clear: both;
+}
+.center{
+	text-align: center;
+	width: inherit;
+	vertical-align: middle;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.active{
+	display: inline !important;
+}
+.sideview-container{
+	display: none;
+	width: 50%;
+	height: 500px;
+	float: left;
+	clear: both;
+	position: fixed;
+	top: 70px;
+}
+.container{
+	margin: 0 auto;
+  	max-width: 1280px;
+  	width: 90%;
+}
+
+/*IDs*/
+#sideview{
+	height: 300px;
+	width:300px;
+	border: 2px dotted black;
+	display: none;
+	float: left;
+}
+#about{
+	width: 50%;
+	height: 600px;
+	background-image: url("images/content.png");
+	border-radius: 4px;
+	margin: auto;
+	position: relative;
+	z-index: -1;
+}
+#cultural{
+	width: 40%;
+	height: 470px;
+	float: right;
+	margin: 20px;
+	background-image: url("images/content.png");
+	text-align: inherit;
+	border-radius: 4px;
+	z-index: -1;
+}
+#post{
+	width: 1000px;
+	padding: 15px;
+	margin: auto;
+	text-align: center;
+	background-color: #4A2560;
+	position: relative;
+	border-radius: 4px;
+	z-index: -1;
+}
+#project{
+	width: 50%;
+	height: inherit;
+	position: center center;
+	background-image: url("images/content.png");
+	display: inline-block;
+	border-radius: 4px;
+	z-index: -1;
+}
+#technical{
+	width: 40%;
+	height: 470px;
+	margin: 20px;
+	float: left;
+	background-image: url("images/content.png");
+	text-align: inherit;
+	border-radius: 4px;
+	z-index: -1;
+}
+#computer{
+	background-color: #D3D1D4;
+	color: black;
+	width: 300px;
+	height: 200px;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+#end{
+	background-color: black;
+	width: 150px;
+	height: 50px;
+	color: white;
+	margin: 5px;
+	border-radius: 3px;
+}
+#flip{
+	background-color: black;
+	width: 150px;
+	height: 50px;
+	color: white;
+	margin: 5px;
+	display: inline-block;
+	border-radius: 3px;
+}
+#game{
+	background-color: #D3D1D4;
+	color: black;
+	width: 600px;
+	height: 600px;
+	margin: auto;
+	text-align: center;
+	border-radius: 3px;
+}
+#player{
+	background-color: #D3D1D4;
+	color: black;
+	width: 300px;
+	height: 200px;
+	margin-top: 10px;
+	margin: auto;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+#start{
+	background-color: black;
+	width: 150px;
+	height: 50px;
+	color: white;
+	margin: 5px;
+	display: inline-block;
+	border-radius: 3px;
+}
+

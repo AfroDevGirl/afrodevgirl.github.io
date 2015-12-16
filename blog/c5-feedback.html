@@ -1,65 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Alexis Moody Blog</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../default.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript">	
-			$(document).ready(function() {
-				$('.topMenu > li').bind('mouseover', openSubMenu);
-				$('.topMenu > li').bind('mouseout', closeSubMenu);
-				$('.profile').fadeIn(6000);
-				function openSubMenu() {
-					$(this).find('ul').css('visibility', 'visible');	
-				};
-		
-				function closeSubMenu() {
-					$(this).find('ul').css('visibility', 'hidden');	
-				};
-			});
-		</script>
+		<title>Alexis Moody</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="../default.scss"/>
+	    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <script type="text/javascript" src="../jquery.js"></script>
+	    <script type="text/javascript" src="../background.js"></script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a> 
-			<ul class="topMenu">
-				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
-						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
-				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
-				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
-			</ul>
+			<h2><a href="http://amoody2108.github.io">Alexis Moody | Web Developer</a>
+		        <a href="https://www.linkedin.com/in/alexismoody" target="_blank"><i class="fa fa-linkedin" style="float: right;"></i></a>
+		        <a href="http://www.twitter.com/AfroDevGirl" target="_blank"><i class="fa fa-twitter" style="float: right;"></i></a>
+		        <a href="http://www.github.com/amoody2108" target="_blank"><i class="fa fa-github" style="float: right;"></i></a>
+		    </h2>
 		</header>
 		<!-- Content Section -->
-		<div id="content">
-			<div id="post">
-				<h3>Feedback</h3>
-				<h4>Filtering out the noise</h4>
-				<h5>7/20/15</h5>
-				<p>Hello gang! It’s been a beautiful couple of days here in the Windy City and it got me thinking about the symbiotic nature of this huge metropolis. Every day there are millions of people going to and from work, and over the summer to and from festivals, and while there are hiccups every once in awhile this city really can be incredibly efficient. It’s a truly collaborative effort, one that has taken years of trial and error to get down to a science. Similarly, one of the major cornerstones of Dev Bootcamp is its insistence on peer pairing. A collaborative effort between two (or more!) programmers to produce one document of functioning code, a functioning city if you will. When I first started reading all of the requirements for Dev Bootcamp I was apprehensive about “group projects”. A dreaded part of traditional education for those of us who did a majority of the work. But now I’m happy to say I actually really love pairing. As much as programming can be an insular activity it’s really great to bounce ideas off of another person. Coming from a theatre background has taught me the value in collaborative efforts and I am constantly trying to make my pairing sessions as collaborative as possible. I particularly love when I’m able to help my pair through a concept or a snippet of code. It helps me fully understand the material while helping someone else to do the same. I also don’t get frustrated easily so I really haven’t had any bad pairing sessions. If there is ever any difficult code or concept then I work with my partner to find solutions. Dev Bootcamp has really shown me the greatness of truly collaborative work.</p>
-				<p>The other half of this collaborative work is giving feedback on the time you spent together on a project or challenge. In Dev Bootcamp all feedback must be specific, actionable, and kind. That type of feedback is an incredibly useful tool to improve one’s technical and cultural skills. For me, 99% of the time I feel wonderful after reading feedback. I’ve been fortunate enough to have amazing sessions pretty much every time i’ve paired (over 15 times!) and the feedback has been great from each of those sessions. I think feedback is really great in terms of discovering things about yourself. I’ve learned my strengths and weaknesses as a pair but not so much about the actual coding material. That said, the feedback I receive makes me want to continue to be prepared for every session and just be myself. Staying comfortable is what helps my pairs stay comfortable and the results have been spectacular so far! Another aspect of receiving feedback is actually giving it and for me it feels very difficult at times. I want to help others improve but I feel like sometimes it would be better if I said it to their face instead of anonymously. I worry about being too critical and someone becoming discouraged because of words on a screen. I am admittedly terrible at writing feedback. I am naturally not a critical person so little nitpicky critique are almost impossible for me to think of and write down. So my feedback tends to be short and generally very encouraging. I rarely have an actual critique which is ultimately both good and bad. I could potentially be holding someone back from improving which is also a disconcerting thought.</p>
-				<p>Overall pairing with another programmer and giving them feedback allows me to really explore my own strengths and weaknesses. It gives me a common variable in which to expand the data and i’m grateful for it. I will say that it is very difficult for me to initiate reading feedback sometimes. I have a massive amount of anxiety when it comes to getting criticised so getting the courage to read the feedback can be taxing. That said I need to remind myself that this feedback is important to mine and my peers’ growth as programmers. This is only the beginning!  </p>
-			</div>
-		</div>
-		<!-- Footer Section -->
-		<footer>
-			<div class="footnav"><a href="https://www.twitter.com/QP_VPMedia">Twitter</a></div>
-			<div class="footnav"><a href="https://www.facebook.com/DarkLight12">Facebook</a></div>
-			<div class="footnav"><a href="https://www.linkedin.com/in/amoody12">Linked-In</a></div>
-			<div class="footnav"><a href="mailto:amoodyldes@gmail.com">Email</a></div>
-		</footer>
+		<article id="one" data-color="#0000ff" style="width: 100%;">
+			<h1>Feedback</h1>
+			<h2>Filtering out the noise</h2>
+			<h3>7/20/15</h3>
+			<p>Hello gang! It’s been a beautiful couple of days here in the Windy City and it got me thinking about the symbiotic nature of this huge metropolis. Every day there are millions of people going to and from work, and over the summer to and from festivals, and while there are hiccups every once in awhile this city really can be incredibly efficient. It’s a truly collaborative effort, one that has taken years of trial and error to get down to a science. Similarly, one of the major cornerstones of Dev Bootcamp is its insistence on pair programming. A collaborative effort between two (or more!) programmers to produce one document of functioning code, a functioning city if you will. When I first started reading all of the requirements for Dev Bootcamp I was apprehensive about “group projects”. A dreaded part of traditional education for those of us who did a majority of the work. But now I’m happy to say I actually really love pairing. As much as programming can be an insular activity it’s really great to bounce ideas off of another person. Coming from a theatre background has taught me the value in collaborative efforts and I am constantly trying to make my pairing sessions as collaborative as possible. I particularly love when I’m able to help my pair through a concept or a snippet of code. It helps me fully understand the material while helping someone else to do the same. I also don’t get frustrated easily so I really haven’t had any bad pairing sessions. If there is ever any difficult code or concept then I work with my partner to find solutions. Dev Bootcamp has really shown me the greatness of truly collaborative work.</p>
+			<p>The other half of this collaborative work is giving feedback on the time you spent together on a project or challenge. In Dev Bootcamp all feedback must be specific, actionable, and kind. That type of feedback is an incredibly useful tool to improve one’s technical and cultural skills. For me, 99% of the time I feel wonderful after reading feedback. I’ve been fortunate enough to have amazing sessions pretty much every time i’ve paired (over 15 times!) and the feedback has been great from each of those sessions. I think feedback is really great in terms of discovering things about yourself. I’ve learned my strengths and weaknesses as a pair but not so much about the actual coding material. That said, the feedback I receive makes me want to continue to be prepared for every session and just be myself. Staying comfortable is what helps my pairs stay comfortable and the results have been spectacular so far! Another aspect of receiving feedback is actually giving it and for me it feels very difficult at times. I want to help others improve but I feel like sometimes it would be better if I said it to their face instead of anonymously. I worry about being too critical and someone becoming discouraged because of words on a screen. I am admittedly terrible at writing feedback. I am naturally not a critical person so little nitpicky critique are almost impossible for me to think of and write down. So my feedback tends to be short and generally very encouraging. I rarely have an actual critique which is ultimately both good and bad. I could potentially be holding someone back from improving which is also a disconcerting thought.</p>
+			<p>Overall pairing with another programmer and giving them feedback allows me to really explore my own strengths and weaknesses. It gives me a common variable in which to expand the data and i’m grateful for it. I will say that it is very difficult for me to initiate reading feedback sometimes. I have a massive amount of anxiety when it comes to getting criticised so getting the courage to read the feedback can be taxing. That said I need to remind myself that this feedback is important to mine and my peers’ growth as programmers. This is only the beginning!  </p>
+		</article>
 	</body>
 </html>

@@ -1,65 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Alexis Moody Blog</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../default.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-			<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript">	
-			$(document).ready(function() {
-				$('.topMenu > li').bind('mouseover', openSubMenu);
-				$('.topMenu > li').bind('mouseout', closeSubMenu);
-				$('.profile').fadeIn(6000);
-				function openSubMenu() {
-					$(this).find('ul').css('visibility', 'visible');	
-				};
-		
-				function closeSubMenu() {
-					$(this).find('ul').css('visibility', 'hidden');	
-				};
-			});
-		</script>
+		<title>Alexis Moody</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="../default.scss"/>
+	    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <script type="text/javascript" src="../jquery.js"></script>
+	    <script type="text/javascript" src="../background.js"></script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a> 
-			<ul class="topMenu">
-				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
-						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
-				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
-				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
-			</ul>
+			<h2><a href="http://amoody2108.github.io">Alexis Moody | Web Developer</a>
+	        <a href="https://www.linkedin.com/in/alexismoody" target="_blank"><i class="fa fa-linkedin" style="float: right;"></i></a>
+	        <a href="http://www.twitter.com/AfroDevGirl" target="_blank"><i class="fa fa-twitter" style="float: right;"></i></a>
+	        <a href="http://www.github.com/amoody2108" target="_blank"><i class="fa fa-github" style="float: right;"></i></a>
+      		</h2>
 		</header>
 		<!-- Content Section -->
-		<div id="content">
-			<div id="post">
-				<h3>What's Going On In My Noggin?</h3>
-				<h4>An in-depth look at my DBC psyche</h4>
-				<h5>06/28/2015</h5>
-				<p>My thinking style is Abstract Random (AR) which allows me the ability to work and share with others. I also like to have social activities to balance work and have freedom from control by others. I believe everything should invoke our personal, individual, or artistic expression whether it’s a new array or some new bedsheets. I think my AR thinking style helps me have really great pairing sessions and overall collaborative environments. I’m no longer afraid of getting help and helping others, even with things I may not know about (shoutout to Josue!!). Overall I feel really good about my thinking style and how it’s helping me in the first leg of this program.</p>
-				<p>Phase 0 has been really interesting so far. I think i’m getting the material down pretty well but because of my previous experience in fundamental programming i’m getting frustrated with a few of the little things in the Ruby and HTML/CSS challenges. I don’t really think the issues have anything to do with my thinking style, because i’m generally pretty collaborative. In fact some of my favorite moments have been in my pairing sessions over the past few weeks. I think I need to stop being so stubborn and just complete the challenges the way they should be done, and in order. </p>
-				<p>Two years ago I would have put myself in a pretty steady fixed mindset. Since I’ve moved to Chicago, and even more so since I started DBC I believe i’m more in a growth mindset. I believe that i’m constantly learning and growing as a programmer and human being. Nothing is more evidence to that mindset than shedding my ignorance about feminism and race in America over the past couple of years. I used to have so many internalized prejudices but I learned more and even though i’m still constantly learning I believe I am a much better person today than I have ever been.</p>
-			</div>
+		<article id="one" data-color="#0000ff" style="width: 100%;">
+			<h1>What's Going On In My Noggin?</h1>
+			<h2>An in-depth look at my DBC psyche</h2>
+			<h3>06/28/2015</h3>
+			<p>My thinking style is Abstract Random (AR) which allows me the ability to work and share with others. I also like to have social activities to balance work and have freedom from control by others. I believe everything should invoke our personal, individual, or artistic expression whether it’s a new array or some new bedsheets. I think my AR thinking style helps me have really great pairing sessions and overall collaborative environments. I’m no longer afraid of getting help and helping others, even with things I may not know about (shoutout to Josue!!). Overall I feel really good about my thinking style and how it’s helping me in the first leg of this program.</p>
+			<p>Phase 0 has been really interesting so far. I think i’m getting the material down pretty well but because of my previous experience in fundamental programming i’m getting frustrated with a few of the little things in the Ruby and HTML/CSS challenges. I don’t really think the issues have anything to do with my thinking style, because i’m generally pretty collaborative. In fact some of my favorite moments have been in my pairing sessions over the past few weeks. I think I need to stop being so stubborn and just complete the challenges the way they should be done, and in order. </p>
+			<p>Two years ago I would have put myself in a pretty steady fixed mindset. Since I’ve moved to Chicago, and even more so since I started DBC I believe i’m more in a growth mindset. I believe that i’m constantly learning and growing as a programmer and human being. Nothing is more evidence to that mindset than shedding my ignorance about feminism and race in America over the past couple of years. I used to have so many internalized prejudices but I learned more and even though i’m still constantly learning I believe I am a much better person today than I have ever been.</p>
 		</div>
-		<!-- Footer Section -->
-		<footer>
-			<div class="footnav"><a href="https://www.twitter.com/QP_VPMedia">Twitter</a></div>
-			<div class="footnav"><a href="https://www.facebook.com/DarkLight12">Facebook</a></div>
-			<div class="footnav"><a href="https://www.linkedin.com/in/amoody12">Linked-In</a></div>
-			<div class="footnav"><a href="mailto:amoodyldes@gmail.com">Email</a></div>
-		</footer>
 	</body>
 </html>
