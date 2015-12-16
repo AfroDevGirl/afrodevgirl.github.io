@@ -1,67 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Alexis Moody Blog</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../default.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript">	
-			$(document).ready(function() {
-				$('.topMenu > li').bind('mouseover', openSubMenu);
-				$('.topMenu > li').bind('mouseout', closeSubMenu);
-				$('.profile').fadeIn(6000);
-				function openSubMenu() {
-					$(this).find('ul').css('visibility', 'visible');	
-				};
-		
-				function closeSubMenu() {
-					$(this).find('ul').css('visibility', 'hidden');	
-				};
-			});
-		</script>
+		<title>Alexis Moody</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="../default.scss"/>
+	    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <script type="text/javascript" src="../jquery.js"></script>
+	    <script type="text/javascript" src="../background.js"></script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a>
-			<ul class="topMenu">
-				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
-						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
-				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
-				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
-			</ul>
+			<h2><a href="http://amoody2108.github.io">Alexis Moody | Web Developer</a>
+		        <a href="https://www.linkedin.com/in/alexismoody" target="_blank"><i class="fa fa-linkedin" style="float: right;"></i></a>
+		        <a href="http://www.twitter.com/AfroDevGirl" target="_blank"><i class="fa fa-twitter" style="float: right;"></i></a>
+		        <a href="http://www.github.com/amoody2108" target="_blank"><i class="fa fa-github" style="float: right;"></i></a>
+        	</h2>
 		</header>
 		<!-- Content Section -->
-		<div id="content">
-			<div id="post">
-				<h3>So What's the Deal With Classes and IDs?</h3>
-				<h4>Spoiler Alert: They are both similar and dissimilar</h4>
-				<h5>06/17/2015</h5>
-				<p>So what's going on with these CSS modifiers? On the surface 'classes' and 'IDs' are incredibly similar. Both modify an element and both are called with the following syntax: selector ID="ID name". The difference lies in the subtilties with the element you're trying to modify. </p>
-				<p>So let's start with classes! A class is a modifier that can change multiple elements in an HTML file. For example, if I would like to change the color of an element to red I can create a .red class to be added to any element I want.<br><img src="../images/class-red.png"/><br>Simple as that! Remember: A class can be implemented as many times as you want in an HTML file. </p>
-				<p>IDs, on the other hand work, a little differently. An ID is a modifier that can only change one element in an HTML file. For example, if I would like to make a container for my main content I can make a #content ID to be implemented in the HTML once.<br><img src="../images/id-content.png"/><br>It's important that each ID is only used once, if not the HTML file will not render properly. 
-				</p>
-				<p>That's it for today. Check back here for more content every week!</p>
-			</div>
-		</div>
-		<!-- Footer Section -->
-		<footer>
-			<div class="footnav"><a href="https://www.twitter.com/QP_VPMedia">Twitter</a></div>
-			<div class="footnav"><a href="https://www.facebook.com/DarkLight12">Facebook</a></div>
-			<div class="footnav"><a href="https://www.linkedin.com/in/amoody12">Linked-In</a></div>
-			<div class="footnav"><a href="mailto:amoodyldes@gmail.com">Email</a></div>
-		</footer>
+		<article id="one" data-color="#0000ff" style="width: 100%;">
+			<h1>So What's the Deal With Classes and IDs?</h1>
+			<h2>Spoiler Alert: They are both similar and dissimilar</h2>
+			<h3>06/17/2015</h3>
+			<p>So what's going on with these CSS modifiers? On the surface 'classes' and 'IDs' are incredibly similar. Both modify an element and both are called with the following syntax: selector ID="ID name". The difference lies in the subtilties with the element you're trying to modify. </p>
+			<p>So let's start with classes! A class is a modifier that can change multiple elements in an HTML file. For example, if I would like to change the color of an element to red I can create a .red class to be added to any element I want.<br><img src="../images/class-red.png"/><br>Simple as that! Remember: A class can be implemented as many times as you want in an HTML file. </p>
+			<p>IDs, on the other hand work, a little differently. An ID is a modifier that can only change one element in an HTML file. For example, if I would like to make a container for my main content I can make a #content ID to be implemented in the HTML once.<br><img src="../images/id-content.png"/><br>It's important that each ID is only used once, if not the HTML file will not render properly. 
+			</p>
+			<p>That's it for today. Check back here for more content every week!</p>
+		</article>
 	</body>
 </html>

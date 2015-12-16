@@ -1,66 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Alexis Moody Blog</title>
+    <title>Alexis Moody</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../default.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-      <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript"> 
-      $(document).ready(function() {
-        $('.topMenu > li').bind('mouseover', openSubMenu);
-        $('.topMenu > li').bind('mouseout', closeSubMenu);
-        $('.profile').fadeIn(6000);
-        function openSubMenu() {
-          $(this).find('ul').css('visibility', 'visible');  
-        };
-    
-        function closeSubMenu() {
-          $(this).find('ul').css('visibility', 'hidden'); 
-        };
-      });
-    </script>
+    <link rel="stylesheet" type="text/css" href="../default.scss"/>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../background.js"></script>
+    <script type="text/javascript" src="sideview.js"></script>
   </head>
   <body>
-     <!-- Header section -->
     <header>
-      <a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a> 
-      <ul class="topMenu">
-        <li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
-          <ul>
-            <li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
-            <li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
-          </ul>
-        </li>
-        <li><a href="http://amoody2108.github.io/projects.html">Projects</a>
-          <ul>
-            <li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
-            <li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
-          </ul>
-        </li>
-        <li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
-        <li><a href="http://amoody2108.github.io/about.html">About</a></li>
-        <li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
-      </ul>
+      <h2><a href="http://amoody2108.github.io">Alexis Moody | Web Developer</a>
+        <a href="https://www.linkedin.com/in/alexismoody" target="_blank"><i class="fa fa-linkedin" style="float: right;"></i></a>
+        <a href="http://www.twitter.com/AfroDevGirl" target="_blank"><i class="fa fa-twitter" style="float: right;"></i></a>
+        <a href="http://www.github.com/amoody2108" target="_blank"><i class="fa fa-github" style="float: right;"></i></a>
+      </h2>
     </header>
-    <!-- Content Section -->
-    <div id="content">
-      <div id="post">
-        <h3>Doing What Now?</h3>
-        <h4>I'm in over my head, and I couldn't be happier</h4>
-        <h5>06/11/2015</h5>
-        <p>Hello and welcome to my way less technical blog! Here you'll find me happily stumbling my way through Dev Bootcamp and it's culture. So let's get started shall we?</p>
-        <p>I am beyond ecstatic to be a part of this program. My entire life as a student has been about regurgitating material I don't care about or that isn't relevant to my life. What initially attracted me to the program, and what is even more apparent as I finish my first week, is this is an experience. I'm finally learning in a holistic way and I couldn't be happier. I've never been in a more supportive and awesome group of people, and it's only been a week! I can't wait to actually get on-site and really get to the nitty gritty with these amazing individuals in my cohort.</p>
-        <p>That said, I can't deny getting to on-site is kind of terrifying. Making mistakes in the safety of my own home is easy. I can take a minute, check my email (or twitter), and then come back to the issue whenever I have a problem. But on site it's hours upon hours of working through issues, something I'm not used to. But I think I'll be ready for it. If this first week has taught me anything it's that whenever I fall down I'll get picked back up by my peers. Over the years asking for help has been very hard for me. I think, through DBC, that less than positive trait of mine will go by the wayside. As Shareef said, DBC is what we make it, and I plan on making this the most transformative experience of my life.</p>
-        <p>I think that's all the rambling I have in me for today! Keep checking this space for my mostly coherent thoughts on my DBC experience.</p>
-      </div>
-    </div>
-    <!-- Footer Section -->
-    <footer>
-      <div class="footnav"><a href="https://www.twitter.com/QP_VPMedia">Twitter</a></div>
-      <div class="footnav"><a href="https://www.facebook.com/DarkLight12">Facebook</a></div>
-      <div class="footnav"><a href="https://www.linkedin.com/in/amoody12">Linked-In</a></div>
-      <div class="footnav"><a href="mailto:amoodyldes@gmail.com">Email</a></div>
-    </footer>
+    <article id="one" data-color="#0000ff" style="width: 100%;">
+      <h3>Doing What Now?</h3>
+      <h4>I'm in over my head, and I couldn't be happier</h4>
+      <h5>06/11/2015</h5>
+      <p>Hello and welcome to my way less technical blog! Here you'll find me happily stumbling my way through Dev Bootcamp and it's culture. So let's get started shall we?</p>
+      <p>I am beyond ecstatic to be a part of this program. My entire life as a student has been about regurgitating material I don't care about or that isn't relevant to my life. What initially attracted me to the program, and what is even more apparent as I finish my first week, is this is an experience. I'm finally learning in a holistic way and I couldn't be happier. I've never been in a more supportive and awesome group of people, and it's only been a week! I can't wait to actually get on-site and really get to the nitty gritty with these amazing individuals in my cohort.</p>
+      <p>That said, I can't deny getting to on-site is kind of terrifying. Making mistakes in the safety of my own home is easy. I can take a minute, check my email (or twitter), and then come back to the issue whenever I have a problem. But on site it's hours upon hours of working through issues, something I'm not used to. But I think I'll be ready for it. If this first week has taught me anything it's that whenever I fall down I'll get picked back up by my peers. Over the years asking for help has been very hard for me. I think, through DBC, that less than positive trait of mine will go by the wayside. As Shareef said, DBC is what we make it, and I plan on making this the most transformative experience of my life.</p>
+      <p>I think that's all the rambling I have in me for today! Keep checking this space for my mostly coherent thoughts on my DBC experience.</p>
+    </article>
   </body>
 </html>

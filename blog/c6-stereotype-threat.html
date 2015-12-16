@@ -1,65 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Alexis Moody Blog</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="../default.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript">	
-			$(document).ready(function() {
-				$('.topMenu > li').bind('mouseover', openSubMenu);
-				$('.topMenu > li').bind('mouseout', closeSubMenu);
-				$('.profile').fadeIn(6000);
-				function openSubMenu() {
-					$(this).find('ul').css('visibility', 'visible');	
-				};
-		
-				function closeSubMenu() {
-					$(this).find('ul').css('visibility', 'hidden');	
-				};
-			});
-		</script>
+		<title>Alexis Moody</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" type="text/css" href="../default.scss"/>
+	    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	    <script type="text/javascript" src="../jquery.js"></script>
+	    <script type="text/javascript" src="../background.js"></script>
 	</head>
 	<body>
 		 <!-- Header section -->
 		<header>
-			<a href="http://amoody2108.github.io"><img src="images/me_logo.gif" class="logo"/></a> 
-			<ul class="topMenu">
-				<li><a href="http://amoody2108.github.io/blog_index.html">Blog</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Technical</a>
-						<li><a href="http://amoody2108.github.io/blog_index.html">Cultural</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/projects.html">Projects</a>
-					<ul>
-						<li><a href="http://amoody2108.github.io/projects/war.html">Let's Play War</a></li>
-						<li><a href="http://amoody2108.github.io/projects/cheat-sheet.html">Cheat Sheet</a></li>
-					</ul>
-				</li>
-				<li><a href="http://amoody2108.github.io/resume.html">Resume</a></li>
-				<li><a href="http://amoody2108.github.io/about.html">About</a></li>
-				<li><a href="http://amoody2108.github.io/contact.html">Contact</a></li>
-			</ul>
+			<h2><a href="http://amoody2108.github.io">Alexis Moody | Web Developer</a>
+		        <a href="https://www.linkedin.com/in/alexismoody" target="_blank"><i class="fa fa-linkedin" style="float: right;"></i></a>
+		        <a href="http://www.twitter.com/AfroDevGirl" target="_blank"><i class="fa fa-twitter" style="float: right;"></i></a>
+		        <a href="http://www.github.com/amoody2108" target="_blank"><i class="fa fa-github" style="float: right;"></i></a>
+		    </h2>
 		</header>
 		<!-- Content Section -->
-		<div id="content">
-			<div id="post">
-				<h3>A Stereo Type</h3>
-				<h4>Living an all encompassing life despite the noise</h4>
-				<h5>7/27/2015</h5>
-				<p>Like many young Americans I wake up every day, rub my eyes, check my phone for status updates and emails, and make my first cup of coffee. Yet, I still live in a vastly different social experience than many, or most, of my peers. I wake up in a world where my gender and race (among other identities) are constantly scrutinized, demonized, or degraded. Our society routinely exposes me to negative stereotypes about my identity that make me feel lesser than other Americans. Dr. Claude Steele exposed this feeling of lesser ability as the social psychological phenomenon Stereotype Threat (ST).</p>
-				<p>ST is essentially the notion that, when presented with an equal context, two “opposing” identity groups will perform wildly differently and the group that routinely has negative stereotypes placed on it will perform significantly lower than the group with positive affirmations. In other words, a societally scrutinized group will perform under their abilities because of stereotypes placed on them. This phenomenon can account for black students at all levels of academia leaving school or producing lower test scores. The black students have an equal aptitude as their white counterparts but because society doesn’t believe in them they internalize those negative thoughts and make mistakes more often. Colloquially, they “psyche themselves out”.</p>
-				<p>I’ve experienced ST in my day to day life, much to my chagrin. I experience it as a professional female driver, a black person shopping, and as a democratic socialist visiting rural parts of the southern United States. I am constantly told I am less than or unwelcome in environments that I would like to be in. But despite these daily social inequities I try to rise above. I accept myself for who I am and I can only hope that others will do the same.</p>
-			</div>
-		</div>
-		<!-- Footer Section -->
-		<footer>
-			<div class="footnav"><a href="https://www.twitter.com/QP_VPMedia">Twitter</a></div>
-			<div class="footnav"><a href="https://www.facebook.com/DarkLight12">Facebook</a></div>
-			<div class="footnav"><a href="https://www.linkedin.com/in/amoody12">Linked-In</a></div>
-			<div class="footnav"><a href="mailto:amoodyldes@gmail.com">Email</a></div>
-		</footer>
+		<article id="one" data-color="#0000ff" style="width: 100%;">
+			<h1>A Stereo Type</h1>
+			<h2>Living an all encompassing life despite the noise</h2>
+			<h3>7/27/2015</h3>
+			<p>Like many young Americans I wake up every day, rub my eyes, check my phone for status updates and emails, and make my first cup of coffee. Yet, I still live in a vastly different social experience than many, or most, of my peers. I wake up in a world where my gender and race (among other identities) are constantly scrutinized, demonized, or degraded. Our society routinely exposes me to negative stereotypes about my identity that make me feel lesser than other Americans. Dr. Claude Steele exposed this feeling of lesser ability as the social psychological phenomenon Stereotype Threat (ST).</p>
+			<p>ST is essentially the notion that, when presented with an equal context, two “opposing” identity groups will perform wildly differently and the group that routinely has negative stereotypes placed on it will perform significantly lower than the group with positive affirmations. In other words, a societally scrutinized group will perform under their abilities because of stereotypes placed on them. This phenomenon can account for black students at all levels of academia leaving school or producing lower test scores. The black students have an equal aptitude as their white counterparts but because society doesn’t believe in them they internalize those negative thoughts and make mistakes more often. Colloquially, they “psyche themselves out”.</p>
+			<p>I’ve experienced ST in my day to day life, much to my chagrin. I experience it as a professional female driver, a black person shopping, and as a democratic socialist visiting rural parts of the southern United States. I am constantly told I am less than or unwelcome in environments that I would like to be in. But despite these daily social inequities I try to rise above. I accept myself for who I am and I can only hope that others will do the same.</p>
+		</article>
 	</body>
 </html>
